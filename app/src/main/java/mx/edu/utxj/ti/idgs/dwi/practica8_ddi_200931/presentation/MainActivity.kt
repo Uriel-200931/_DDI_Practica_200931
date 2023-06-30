@@ -65,7 +65,7 @@ class MainActivity : ComponentActivity() {
         updateTimeRunnable = object : Runnable {
             override fun run() {
                 val currentTime = Calendar.getInstance().time
-                val dateFormat = SimpleDateFormat("HH:mm", Locale.getDefault())
+                val dateFormat = SimpleDateFormat("HH:mm:ss", Locale.getDefault())
                 val formattedTime = dateFormat.format(currentTime)
                 TextViewHora.text = formattedTime
 
